@@ -726,7 +726,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 		return FALSE;
 	}
 
-	ShowWindow(g_hWnd, (nCmdShow != SW_HIDE) ? SW_SHOWMAXIMIZED : nCmdShow);
+	ShowWindow(g_hWnd, nCmdShow);
 	UpdateWindow(g_hWnd);
 
 	return TRUE;
